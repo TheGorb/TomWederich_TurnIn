@@ -1,5 +1,5 @@
 use rand::Rng;
-use std::{io};
+use std::io;
 
 pub fn fahrenheit_celsius_converter(temperature: i32, f2c: bool) -> f32 {
     let float_temp = temperature as f32;
@@ -93,7 +93,10 @@ pub fn input_coord(size: u8) -> (u8, u8) {
             if string_with_only_digit.len() > 0 {
                 let number = string_with_only_digit.parse::<u8>().unwrap();
                 if number > size {
-                    println!("{:?} is out of bounds on a board of size {:?}", number, size);
+                    println!(
+                        "{:?} is out of bounds on a board of size {:?}",
+                        number, size
+                    );
                 } else {
                     if number_of_correct_answer == 0 {
                         answer.0 = number;
@@ -104,7 +107,10 @@ pub fn input_coord(size: u8) -> (u8, u8) {
                     number_of_correct_answer += 1;
                 }
             } else {
-                println!("{:?} is not a number, error: invalid digit found in string", user_input.trim());
+                println!(
+                    "{:?} is not a number, error: invalid digit found in string",
+                    user_input.trim()
+                );
             }
         }
     }
@@ -112,7 +118,13 @@ pub fn input_coord(size: u8) -> (u8, u8) {
 }
 
 pub fn madlib() {
-    let mut answer: (String, String, String, String, String) = (String::new(), String::new(), String::new(), String::new(), String::new());
+    let mut answer: (String, String, String, String, String) = (
+        String::new(),
+        String::new(),
+        String::new(),
+        String::new(),
+        String::new(),
+    );
     let mut user_input = String::new();
     let stdin = io::stdin();
 
@@ -121,7 +133,7 @@ pub fn madlib() {
         answer.0 = String::from("fish");
     }
     answer.0 = String::clone(&user_input);
- 
+
     println!("give me a adjective");
     user_input.clear();
     if stdin.read_line(&mut user_input).is_err() {
@@ -151,5 +163,26 @@ pub fn madlib() {
     answer.4 = String::clone(&user_input);
 
     println!("\nThe {} was really {}.", answer.0.trim(), answer.1.trim());
-    println!("My mom {} the {} and then kicked the {}.", answer.2.trim(), answer.3.trim(), answer.4.trim());
+    println!(
+        "My mom {} the {} and then kicked the {}.",
+        answer.2.trim(),
+        answer.3.trim(),
+        answer.4.trim()
+    );
+}
+
+pub fn ghost_name_generator(s: &mut String) {
+    *s = s
+        .replace("a", "at")
+        .replace("e", "eboo")
+        .replace("h", "s")
+        .replace("n", "noo")
+        .replace("r", "reee")
+        .replace("y", "yoo")
+        .replace("A", "At")
+        .replace("E", "Eboo")
+        .replace("H", "S")
+        .replace("N", "Noo")
+        .replace("R", "Reee")
+        .replace("Y", "Yoo");
 }
