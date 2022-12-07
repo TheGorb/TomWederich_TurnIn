@@ -1,0 +1,40 @@
+-----------------------
+ ex0 - serverClient
+-----------------------
+	compiles ------ 00/10
+
+	works --------- 00/10
+
+	leak-proof ---- 00/00
+
+	notes
+		didn't compile with my main. clientMain.c:8:17: error: ‘c’ undeclared (first use in this function)
+		fix for grade
+
+-----------------------
+ ex1 - dataThread
+-----------------------
+	compiles ------ 00/10
+
+	works --------- 00/10
+
+	leak-proof ---- 00/00
+
+	notes
+		didn't compile with my main. main.c:22:5: error: unknown type name ‘BuffLock
+		fix for grade
+
+-----------------------
+ ex2 - p2p
+-----------------------
+	compiles ------ 00/10
+
+	works --------- 00/10
+
+	leak-proof ---- 00/00
+
+	notes
+
+-----------------------
+total ----------- 00/40  
+
