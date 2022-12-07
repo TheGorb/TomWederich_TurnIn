@@ -3,15 +3,11 @@
 // Takes in pointer to data and an amount of bytes that are in the data. It creates Data *d and allocates d->arr to the size of bytes and then copies the data from dat into d→arr.
 Data *makeData(void *dat, int bytes)
 {
-    printf("%p\n", dat);
-    printf("%d\n", sizeof(dat));
     Data *newData = malloc(sizeof(Data));
 
     newData->arr = malloc(sizeof(bytes));
     memcpy(newData->arr, dat, bytes);
     newData->byteSize = bytes;
-    printf("%p\n", newData->arr);
-    printf("%d\n", sizeof(newData->arr));
     return newData;
 }
 
@@ -20,8 +16,6 @@ void *writeData(Data *d)
 {
     void *buffer = malloc(sizeof(d->byteSize));
     memcpy(buffer, d->arr, d->byteSize);
-    printf("%p\n", buffer);
-    printf("%d\n", sizeof(buffer));
     return buffer;
 }
 
@@ -29,11 +23,9 @@ void *writeData(Data *d)
 Data *readData(void *buffer)
 {
     Data *newData = malloc(sizeof(Data));
-    printf("%p\n", buffer);
-    printf("%d\n", sizeof(buffer));
     newData->byteSize = sizeof(buffer);
     newData->arr = malloc(sizeof(buffer));
-    memcpy(newData->arr, buffer, newData->byteSize );
+    memcpy(newData->arr, buffer, newData->byteSize);
     return newData;
 }
 
