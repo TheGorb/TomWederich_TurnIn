@@ -10,6 +10,7 @@ Server *setUpServerConnection()
 
     newServer->maxClients = 10;
     newServer->clientSocks = malloc(sizeof(int) * newServer->maxClients);
+    newServer->clientSocks[0] = NULL;
     newServer->tv.tv_sec = 0;
     newServer->tv.tv_usec = 0;
     newServer->sock = socket(AF_INET, SOCK_STREAM, 0);
@@ -53,44 +54,7 @@ void closeServer(Server *s)
     free(s);
 }
 
-int serverSendReceive(Server *s, void *buffer)
+void serverSendReceive(Server *s, void *buffer, int *gotData)
 {
-    int clientSocket = 0;
-    int numberOfByteRead = 0;
-    memset(buffer, 0, BUFF);
-    clientSocket = accept(s->sock, NULL, NULL);
 
-    if (clientSocket > 0)
-    {
-        int socketIndex = 0;
-        for (; s->clientSocks[socketIndex]; socketIndex++)
-            ;
-        s->clientSocks[socketIndex] = clientSocket;
-
-        if (send(s->clientSocks[socketIndex], welcomeMessage, sizeof(welcomeMessage), O_NONBLOCK) < 0)
-        {
-            printf("Send failed\n");
-        }
-    }
-    for (int i = 0; s->clientSocks[i]; i++)
-    {
-        ssize_t bytesRead;
-        bytesRead = recv(s->clientSocks[i], buffer, 1024, 0);
-        if (bytesRead < 0)
-        {
-            int currentElement = i;
-            for (; s->clientSocks[currentElement + 1]; currentElement++) {
-                s->clientSocks[currentElement] = s->clientSocks[currentElement + 1];
-            }
-            s->clientSocks[currentElement] = 0;
-            return (0);
-        }
-
-        if (bytesRead > 0)
-            numberOfByteRead += bytesRead;
-        if (*(int *)buffer < 0)
-            memset(buffer, 0, BUFF);
-    }
-    sleep(1);
-    return (numberOfByteRead);
 }
