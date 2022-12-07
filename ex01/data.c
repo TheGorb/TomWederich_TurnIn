@@ -7,15 +7,15 @@ Data *makeData(void *dat, int bytes)
 
     newData->arr = malloc(sizeof(bytes));
     memcpy(newData->arr, dat, bytes);
-    newData->byteSize = bytes;
+    newData->bytes = bytes;
     return newData;
 }
 
 // Allocates a buffer with the exact size of the Data and then copies the data being pointed to by the Data struct into the buffer along with the size of the buffer. Returns a pointer to the buffer.
 void *writeData(Data *d)
 {
-    void *buffer = malloc(sizeof(d->byteSize));
-    memcpy(buffer, d->arr, d->byteSize);
+    void *buffer = malloc(sizeof(d->bytes));
+    memcpy(buffer, d->arr, d->bytes);
     return buffer;
 }
 
@@ -23,9 +23,9 @@ void *writeData(Data *d)
 Data *readData(void *buffer)
 {
     Data *newData = malloc(sizeof(Data));
-    newData->byteSize = sizeof(buffer);
+    newData->bytes = sizeof(buffer);
     newData->arr = malloc(sizeof(buffer));
-    memcpy(newData->arr, buffer, newData->byteSize);
+    memcpy(newData->arr, buffer, newData->bytes);
     return newData;
 }
 

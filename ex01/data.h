@@ -10,6 +10,8 @@
 
 typedef struct Data
 {
-    int byteSize;
+    int bytes;
     void *arr;
 } Data;
+
+extern bool runningMainThread = true;

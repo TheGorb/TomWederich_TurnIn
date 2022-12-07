@@ -21,3 +21,15 @@ void *inputThread(void *buffer)
     pthread_mutex_lock(&lock);
     return NULL;
 }
+
+
+BuffLock *makeBuffLock()
+{
+    return NULL;
+}
+
+void freeBuffLock(BuffLock *bl)
+{
+    if (bl)
+        free(bl);
+}
