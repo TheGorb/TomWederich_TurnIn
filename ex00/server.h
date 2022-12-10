@@ -24,7 +24,7 @@ typedef struct Server {
 
 extern void *welcomeMessage;
 extern int welcomeSize;
-extern Server *s;
+Server *s;
 
 void *welcomeMessage = "Hi welcome to the server !";
 int welcomeSize = 3;
