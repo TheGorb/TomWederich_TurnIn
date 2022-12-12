@@ -1,0 +1,88 @@
+______________________________
+Checking Id: 1
+Ticker: EUR
+ConId: 12087807
+Current Price: 0
+Bar Count: -1
+Price: 0,85025
+HighPrice: 0,85495
+LowPrice: 0,8491
+Volume: 0
+WAP: -1
+______________________________
+Checking Id: 2
+Ticker: USD
+ConId: 12087820
+Current Price: 0,93652
+Bar Count: -1
+Price: 0,98045
+HighPrice: 0,98985
+LowPrice: 0,9766
+Volume: 1200000
+WAP: -1
+______________________________
+Checking Id: 3
+Ticker: GBP
+ConId: 12087797
+Current Price: 0,93651
+Bar Count: -1
+Price: 1,2493
+HighPrice: 1,25175
+LowPrice: 1,23015
+Volume: 1000000
+WAP: -1
+______________________________
+Checking Id: 4
+Ticker: GBP
+ConId: 12087797
+Current Price: 1,22335
+Bar Count: -1
+Price: 1,2493
+HighPrice: 1,25175
+LowPrice: 1,23015
+Volume: 3000000
+WAP: -1
+______________________________
+Checking Id: 5
+Ticker: AAPL
+ConId: 265598
+Current Price: 1,22335
+Bar Count: -1
+Price: 1,2493
+HighPrice: 1,25175
+LowPrice: 1,23015
+Volume: 3000000
+WAP: -1
+______________________________
+Checking Id: 6
+Ticker: GOOGL
+ConId: 208813719
+Current Price: 1,22335
+Bar Count: -1
+Price: 1,2493
+HighPrice: 1,25175
+LowPrice: 1,23015
+Volume: 3000000
+WAP: -1
+______________________________
+Checking Id: 7
+Ticker: SPY
+ConId: 756733
+Current Price: 1,22335
+Bar Count: -1
+Price: 1,2493
+HighPrice: 1,25175
+LowPrice: 1,23015
+Volume: 3000000
+WAP: -1
+______________________________
+Checking Id: 8
+Ticker: AAPL
+ConId: 265598
+Current Price: 1,22335
+Bar Count: -1
+Price: 1,2493
+HighPrice: 1,25175
+LowPrice: 1,23015
+Volume: 3000000
+WAP: -1

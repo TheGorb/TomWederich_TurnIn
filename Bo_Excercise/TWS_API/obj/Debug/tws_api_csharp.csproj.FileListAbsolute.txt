@@ -1,0 +1,11 @@
+C:\Taf\Bo\tws_api_csharp\obj\Debug\tws_api_csharp.csproj.AssemblyReference.cache
+C:\Taf\Bo\tws_api_csharp\obj\Debug\tws_api_csharp.csproj.SuggestedBindingRedirects.cache
+C:\Taf\Bo\tws_api_csharp\obj\Debug\tws_api_csharp.csproj.CoreCompileInputs.cache
+C:\Taf\Bo\tws_api_csharp\bin\Debug\tws_api_csharp.exe.config
+C:\Taf\Bo\tws_api_csharp\bin\Debug\tws_api_csharp.exe
+C:\Taf\Bo\tws_api_csharp\bin\Debug\tws_api_csharp.pdb
+C:\Taf\Bo\tws_api_csharp\bin\Debug\CSharpAPI.dll
+C:\Taf\Bo\tws_api_csharp\bin\Debug\CSharpAPI.pdb
+C:\Taf\Bo\tws_api_csharp\obj\Debug\tws_api_csharp.csproj.CopyComplete
+C:\Taf\Bo\tws_api_csharp\obj\Debug\tws_api_csharp.exe
+C:\Taf\Bo\tws_api_csharp\obj\Debug\tws_api_csharp.pdb
