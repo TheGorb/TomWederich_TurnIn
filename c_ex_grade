@@ -1,0 +1,63 @@
+-----------------------
+ ex0 - serverClient
+-----------------------
+	compiles ------ 00/10
+
+	works --------- 00/10
+
+	leak-proof ---- 00/00
+
+	notes
+		doesn't compile
+clientMain.c: In function ‘main’:
+clientMain.c:8:21: error: incompatible types when assigning to type ‘Client’ from type ‘Client *’
+    8 |                 c = connectAsClient(argv[1]);
+      |                     ^~~~~~~~~~~~~~~
+clientMain.c:9:23: error: invalid operands to binary > (have ‘Client’ and ‘int’)
+    9 |                 if (c > 0) {
+      |                       ^
+clientMain.c:16:55: error: incompatible type for argument 1 of ‘receiveData’
+   16 |                                 int val = receiveData(c, buffer);
+      |                                                       ^
+      |                                                       |
+      |                                                       Client
+In file included from clientMain.c:1:
+client.c:41:25: note: expected ‘Client *’ but argument is of type ‘Client’
+   41 | int receiveData(Client *c, void *buffer)
+      |                 ~~~~~~~~^
+clientMain.c:24:48: error: invalid type argument of ‘->’ (have ‘Client’)
+   24 |                                         write(c->sock, &recv, sizeof(int));
+      |                                                ^~
+clientMain.c:32:32: error: invalid type argument of ‘->’ (have ‘Client’)
+   32 |                         close(c->sock);
+      |                                ^~
+clientMain.c:33:30: error: incompatible type for argument 1 of ‘free’
+   33 |                         free(c);
+
+
+-----------------------
+ ex1 - dataThread
+-----------------------
+	compiles ------ 10/10
+
+	works --------- 03/10
+
+	leak-proof ---- 00/00
+
+	notes
+		little endian and 1st pack and unpack work, but then it seg faults
+
+-----------------------
+ ex2 - p2p
+-----------------------
+	compiles ------ 10/10
+
+	works --------- 00/10
+
+	leak-proof ---- 05/00
+
+	notes
+
+-----------------------
+total ----------- 28/40  
+

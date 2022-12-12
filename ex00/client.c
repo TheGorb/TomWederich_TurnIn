@@ -40,15 +40,5 @@ Client *connectAsClient(char *ip)
 //-1 if error
 int receiveData(Client *c, void *buffer)
 {
-	int clientSocket = 0;
-	clientSocket = accept(c->sock, NULL, NULL);
-	if (clientSocket > 0)
-	{
-		if (recv(c->sock, buffer, 1024, 0))
-		{
-			printf("RETIRN %d\n", sizeof(buffer));
-			return sizeof(buffer);
-		}
-	}
 	return 0;
 }

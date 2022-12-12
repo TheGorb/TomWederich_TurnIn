@@ -16,4 +16,6 @@ typedef struct Client {
 	struct timeval tv;
 } Client;
 
+Client *c;
+
 #define BUFF 1024
