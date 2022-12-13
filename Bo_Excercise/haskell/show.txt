@@ -1,0 +1,2 @@
+main :: IO ()
+main =  print(show[1..10])
