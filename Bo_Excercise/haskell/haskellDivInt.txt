@@ -1,0 +1,10 @@
+main :: IO ()
+main =  do
+
+putStr "Tom Wederich\n"
+putStr "To Divide two numbers use / -> "
+putStr "Division of x / y = 29 / 12 = "
+let firstNumber = 29
+let secondNumber = 12
+
+print(firstNumber / secondNumber)
