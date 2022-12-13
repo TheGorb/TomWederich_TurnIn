@@ -86,3 +86,26 @@ HighPrice: 1,2325
 LowPrice: 1,21075
 Volume: 19246
 WAP: -1
+______________________________
+Checking Id: 9
+Ticker: ETH
+ConId: 495759171
+Current Price: 1,2317
+Bar Count: -1
+Price: 1,23235
+HighPrice: 1,2325
+LowPrice: 1,21075
+Volume: 700
+WAP: -1
+______________________________
+Checking Id: 10
+Ticker: BTC
+ConId: 479624278
+Current Price: 1454.666
+Bar Count: -1
+Price: 1456,675
+HighPrice: 1545,125
+LowPrice: 1164,2
+Volume: 700
+WAP: -1
+
