@@ -5,5 +5,5 @@ main :: IO ()
 main =  do
 
 putStr "Tom Wederich\n"
-putStr "Sum of x - y = 29 - 12 = "
+putStr "Sub of x - y = 29 - 12 = "
 print(subInt 29 12)
