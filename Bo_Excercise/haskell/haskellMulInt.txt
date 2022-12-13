@@ -1,0 +1,13 @@
+mulInt :: Integer -> Integer -> Integer
+mulInt x y = x * y
+
+main :: IO ()
+main =  do
+
+putStr "Tom Wederich\n"
+putStr "To multiply two numbers use * -> "
+putStr "Mul of x * y = 29 * 12 = "
+let firstNumber = 29
+let secondNumber = 12
+
+print(mulInt firstNumber secondNumber)
