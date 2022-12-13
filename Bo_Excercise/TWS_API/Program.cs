@@ -107,8 +107,8 @@ namespace IB_Real_Time_Console_CS
             Thread.Sleep(100);
             saveArray(testImpl.contractArray, id);
             clientSocket.cancelMktData(reqId);
-            clientSocket.cancelMktData(reqId + 1);
-            clientSocket.cancelMktData(reqId + 2);
+            clientSocket.cancelMktDepth(reqId + 1);
+            clientSocket.cancelHistoricalData(reqId + 2);
             clientSocket.cancelMktData(reqId + 3);
 
         }
