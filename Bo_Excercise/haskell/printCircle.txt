@@ -1,0 +1,6 @@
+data Area = Circle Float Float Float
+surface :: Area -> Float
+surface (Circle _ _ r) = pi * r ^ 2
+main = do
+    putStr("Tom Wederich\n")
+    print(surface $ Circle 4.6797 9.98987 4.3333)
