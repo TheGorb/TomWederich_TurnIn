@@ -1,0 +1,16 @@
+main :: IO ()
+main =  do
+
+putStr "Tom Wederich\n"
+let evenVar = 30
+let odVar = 29
+
+putStrLn "Number should be even"
+if evenVar `rem` 2 == 0
+    then putStrLn "Number is even"
+else putStrLn "Number is Odd"
+
+putStrLn "Number should be Odd"
+if odVar `rem` 2 == 0
+    then putStrLn "Number is even"
+else putStrLn "Number is Odd"
