@@ -1,0 +1,8 @@
+addInt :: Integer -> Integer -> Integer
+addInt x y = x + y
+
+main :: IO ()
+main =  do
+putStr "Tom Wederich\n"
+putStr "Sum of x + y = 29 + 12 = "
+print(addInt 29 12)
