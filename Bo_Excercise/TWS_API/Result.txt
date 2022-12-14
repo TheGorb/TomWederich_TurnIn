@@ -1,3 +1,5 @@
+## I give you points extra for placing the -1 for WAP where it does not exist.
+## The only issue I have really is that I wanted these laid out in Comma delimited format but let's discuss the structure of data that you used.
 ______________________________
 Checking Id: 1
 Ticker: EUR
