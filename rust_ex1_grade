@@ -1,0 +1,110 @@
+-----------------------
+ ex1.rs
+-----------------------
+	bank.rs ------------- 00/10
+
+
+error[E0599]: no method named `withdrawal` found for struct `Bank` in the current scope
+  --> src/main.rs:15:4
+   |
+15 |     b.withdrawal("William", 0);
+   |       ^^^^^^^^^^ method not found in `Bank<{integer}, _>`
+   |
+  ::: src/bank.rs:4:1
+   |
+4  | pub struct Bank<T, U> {
+   | --------------------- method `withdrawal` not found for this struct
+
+error[E0599]: no method named `withdrawal` found for struct `Bank` in the current scope
+  --> src/main.rs:17:4
+   |
+17 |     b.withdrawal("William", 0);
+   |       ^^^^^^^^^^ method not found in `Bank<{integer}, _>`
+   |
+  ::: src/bank.rs:4:1
+   |
+4  | pub struct Bank<T, U> {
+   | --------------------- method `withdrawal` not found for this struct
+
+error[E0599]: no method named `withdrawal` found for struct `Bank` in the current scope
+  --> src/main.rs:19:15
+   |
+19 |     let cash = b.withdrawal("Kreuger", 6);
+   |                  ^^^^^^^^^^ method not found in `Bank<{integer}, _>`
+   |
+  ::: src/bank.rs:4:1
+   |
+4  | pub struct Bank<T, U> {
+   | --------------------- method `withdrawal` not found for this struct
+
+error[E0599]: no method named `withdrawal` found for struct `Bank` in the current scope
+  --> src/main.rs:21:15
+   |
+21 |     let cash = b.withdrawal("Kreuger", 60);
+   |                  ^^^^^^^^^^ method not found in `Bank<{integer}, _>`
+   |
+  ::: src/bank.rs:4:1
+   |
+4  | pub struct Bank<T, U> {
+   | --------------------- method `withdrawal` not found for this struct
+
+error[E0599]: no method named `retrieve` found for struct `Bank` in the current scope
+  --> src/main.rs:25:4
+   |
+25 |     b.retrieve("Walla", "pisol".to_string());
+   |       ^^^^^^^^ method not found in `Bank<{integer}, String>`
+   |
+  ::: src/bank.rs:4:1
+   |
+4  | pub struct Bank<T, U> {
+   | --------------------- method `retrieve` not found for this struct
+
+error[E0599]: no method named `retrieve` found for struct `Bank` in the current scope
+  --> src/main.rs:29:4
+   |
+29 |     b.retrieve("Walla", "pistol".to_string());
+   |       ^^^^^^^^ method not found in `Bank<{integer}, String>`
+   |
+  ::: src/bank.rs:4:1
+   |
+4  | pub struct Bank<T, U> {
+   | --------------------- method `retrieve` not found for this struct
+
+error[E0599]: no method named `retrieve` found for struct `Bank` in the current scope
+  --> src/main.rs:33:4
+   |
+33 |     b.retrieve("Koopie", "pistol".to_string());
+   |       ^^^^^^^^ method not found in `Bank<{integer}, String>`
+   |
+  ::: src/bank.rs:4:1
+4  | pub struct Bank<T, U> {
+   | --------------------- method `retrieve` not found for this struct
+
+
+	madlib.rs ----------- 00/15
+
+
+error[E0433]: failed to resolve: use of undeclared type `MadLib`
+  --> src/main.rs:36:14
+   |
+36 |     let mut m = MadLib::new();
+   |                 ^^^^^^ use of undeclared type `MadLib`
+
+error[E0433]: failed to resolve: use of undeclared type `MadLib`
+  --> src/main.rs:44:14
+   |
+44 |     let mut m = MadLib::new();
+   |                 ^^^^^^ use of undeclared type `MadLib`
+
+error[E0412]: cannot find type `Madlib` in this scope
+ --> src/madlib.rs:1:6
+  |
+1 | impl Madlib {
+  |      ^^^^^^ not found in this scope
+
+  shape.rs  ----------- 00/20
+	mine_sweeper -------- 00/30
+
+-----------------------
+total ----------- 00/60  
+
