@@ -1,4 +1,2 @@
-# TomWederich_TurnIn
-
-## Bo_Exercises -> Contain all exercise made during Bo classes
-#### To grade please check the Exercise_Result folder
+Hey Tom, this looks much better just do me a favor and put your resume in this directory as well.
+- it looks better from the perspective of employers.
