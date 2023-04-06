@@ -1,2 +1,6 @@
-Hey Tom, this looks much better just do me a favor and put your resume in this directory as well.
-- it looks better from the perspective of employers.
+Hey Bo
+
+The portfolio exercise is at this path: \Bo_Excercise\Exercise_Result\PORTFOLIO\
+
+
+Thank you, have a great spring break !
