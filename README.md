@@ -59,7 +59,7 @@ To use this program, follow the steps below:
 2. Clone this repository to your local machine:
 
 ```
-git clone https://github.com/your-username/tws-api-python-program.git
+git clone git@github.com:TheGorb/TomWederich_TurnIn.git
 ```
 
 3. Install the required dependencies:
@@ -107,8 +107,9 @@ The program consists of the following main parts:
 
 7. Main Function: The main function of the program calls the `buildScanner` method of the `startInvesting` class to initiate the retrieval of market data. It then calls the `printScanner` function to display and save the retrieved data.
 
+## Conclusion
 
-Make sure to replace `your-username` in the repository URL with your actual GitHub username.
+The TWS API is a powerful tool for integrating your own applications with the Interactive Brokers Trader Workstation platform. By using the TWS API, you can automate your trading strategies, access real-time market data, execute trades with low latency, and leverage the diverse range of financial instruments supported by Interactive Brokers.
 
 
 
